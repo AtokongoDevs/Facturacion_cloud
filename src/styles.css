@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #11101d;
+}
+body::-webkit-scrollbar {
+    background-color: white;
+    width: 8px;
+}
+
+/* Login Page */
+
+.login_page {
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    align-items: center;
+}
+
+.login-box-img {
+    flex: 0.6;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box-img h2 {
+    font-size: 3rem;
+    color: #11101d;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.login-box-img p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-box-img img {
+    margin-bottom: 1.5rem;
+}
+
+.login-box {
+    flex: 0.4;
+    height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box form {
+    padding: 1rem 4rem;
+}
+
+@media (max-width: 768px) {
+    .login-box-img {
+        display: none;
+    }
+    .login-box {
+        flex: 1;
+    }
+}
+
+/* Administración, Facturación y Reportes */
+
+/* Register Page */
+
+.register_page {
+    background-color: #f8f8f8;
+    /* height: 100vh; */
+    position: absolute;
+    z-index: -999;
+}
+
+.header-register {
+    width: 100vw;
+    height: 180px;
+    background: rgb(17,23,82);
+    background: linear-gradient(90deg, rgba(17,23,82,1) 0%, rgba(50,92,138,1) 37%, rgba(42,104,117,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.register_content {
+    display: flex;
+    margin-top: 80px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.register-box-left {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3.5rem;
+}
+
+.register-box-left .title-right {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.register-box-right {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-box-right p {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.register-box-right form {
+    padding: 3rem 4rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.box-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0 2rem;
+}
+
+.box-item p {
+    margin-left: 3rem;
+}
+
+@media (max-width: 768px) {
+    .register_content {
+        flex-direction: column;
+        padding: 1rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .register-box-right p {
+        color: #11101d;
+        margin-top: 2rem;
+    }
+}
